@@ -30,8 +30,26 @@ import certificate26 from '../Imagess/C++.jpg'
 import certificate27 from '../Imagess/Graphic.jpg'
 import certificate28 from '../Imagess/Scholarly.JPG'
 import certificate29 from '../Imagess/DS19.jpg'
+import certificate30 from '../Imagess/GreatLearning.jpg'
+import certificate31 from '../Imagess/GreatLearning1.jpg'
 
 const certificate = [
+    {
+        id: '31',
+        title: 'Cloud Foundations',
+        description: 'Cloud Foundations" is a prestigious certificate that validates my comprehensive understanding of cloud computing fundamentals. It signifies my expertise in key concepts such as virtualization, infrastructure as a service (IaaS), platform as a service (PaaS), and software as a service (SaaS). With this certification, I am equipped to leverage the power of cloud technologies to drive innovation and efficiency.',
+        issuer: 'GreatLearning',
+        imgUrl: certificate30,
+        issueDate: 'June, 2023'
+    },
+    {
+        id: '30',
+        title: 'Introduction to AWS',
+        description: 'Introduction to AWS" is a recognized certificate that demonstrates my proficiency in Amazon Web Services (AWS), a leading cloud computing platform. This certification validates my foundational knowledge of AWS services, including compute, storage, database, and networking. With this credential, I am equipped to leverage AWS to design scalable and secure cloud solutions.',
+        issuer: 'GreatLearning',
+        imgUrl: certificate31,
+        issueDate: 'June, 2023'
+    },
     {
       id: '1',
       title: 'Complete Web App Development Course',
@@ -270,15 +288,13 @@ export default function Certificates(props){
     const [loading, setLoading] = useState(true);
 
     setTimeout(() => {
-        props.setProgress(50); //not progressing 2nd time
         setLoading(false);
-        props.setProgress(100);
     }, 1500);
 
     return(
         <>
             <div className="container" style={{ display: "flex", justifyContent: "center" }}>
-                <h2 style={{marginTop: "80px", fontWeight: "bold" }}>MY CERTIFICATES</h2>
+                <h1 style={{marginTop: "80px", fontWeight: "bold" }}>MY CERTIFICATES</h1>
             </div>
 
             {loading && <Spinner />}

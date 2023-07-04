@@ -27,15 +27,13 @@ export default function Interests(props){
     const [loading, setLoading] = useState(true);
 
     setTimeout(() => {
-        props.setProgress(50); //not progressing 2nd time
         setLoading(false);
-        props.setProgress(100);
     }, 1500);
 
     return(
         <>
             <div className="container" style={{ display: "flex", justifyContent: "center" }}>
-                <h2 style={{marginTop: "80px", fontWeight: "bold" }}>MY INTERESTS</h2>
+                <h1 style={{marginTop: "80px", fontWeight: "bold" }}>MY INTERESTS</h1>
             </div>
 
             {loading && <Spinner />}
@@ -43,14 +41,14 @@ export default function Interests(props){
             {!loading && <>
                 <div className="container text-center">
                     {interests.map((element, index)=>{
-                        return <div style = {{marginBottom: "5px"}}>
+                        return <div style = {{marginBottom: "5px"}} key={element.id}>
                             <div className={`row d-flex justify-content-${index%2===0?"start":"end"}`} key={element.id}>
                                 <div className="col-6 mt-3">
-                                    <div className="card" style={{height: "22rem"}}>
+                                    <div className="card">
                                         <div>
                                             <span className="badge rounded-pill bg-danger" style = {{disply:"flex", justifyContent:"flex-end", position:"absolute", right:"0"}}>{element.tag}</span>
                                         </div>
-                                        <div className="card-body">
+                                        <div className="card-body" style={{height: "22rem", overflow: "auto"}}>
                                             <h5 className="card-title" style={{marginTop: "10px", fontWeight: "bold" }}>{element.title}</h5>
                                             <p className="card-text">{element.description}</p>
                                         </div>

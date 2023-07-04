@@ -207,25 +207,13 @@ const Projects = (props) => {
     const [loading, setLoading] = useState(true);
 
     setTimeout(() => {
-        props.setProgress(50); //not progressing 2nd time
         setLoading(false);
-        props.setProgress(100);
     }, 1500);
-
-    // const myFunction =  async() =>{
-    //     props.setProgress(50);
-    //     props.setProgress(100);
-    // }
-
-    // useEffect(() => {
-    //     myFunction(); 
-    //     // eslint-disable-next-line
-    // }, [])
 
     return(
         <>  
             <div className="container" style={{ display: "flex", justifyContent: "center" }}>
-                <h2 style={{marginTop: "80px", fontWeight: "bold" }}>MY PROJECTS</h2>
+                <h1 style={{marginTop: "80px", fontWeight: "bold" }}>MY PROJECTS</h1>
             </div>
 
             {loading && <Spinner />}

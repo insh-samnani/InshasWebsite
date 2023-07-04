@@ -71,15 +71,13 @@ export default function Certificates(props){
     const [loading, setLoading] = useState(true);
 
     setTimeout(() => {
-        props.setProgress(50); //not progressing 2nd time
         setLoading(false);
-        props.setProgress(100);
     }, 1500);
 
     return(
         <>
             <div className="container" style={{ display: "flex", justifyContent: "center" }}>
-                <h2 style={{marginTop: "80px", fontWeight: "bold" }}>MY WORK EXPERIENCE</h2>
+                <h1 style={{marginTop: "80px", fontWeight: "bold" }}>MY WORK EXPERIENCE</h1>
             </div>
 
             {loading && <Spinner />}
