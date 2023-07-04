@@ -9,7 +9,7 @@ export default function Contact(props) {
         </div>
         <div className="col-md-8">
           <div className="card-body">
-            <h3 className="card-title">{props.name}</h3>
+            <h3 className="card-title" style = {{marginTop: "5px"}}>{props.name}</h3>
             {props.details.length > 0 ? (
               <h5 className="card-text">{props.details}</h5>
             ) : (

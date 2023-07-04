@@ -304,13 +304,13 @@ export default function Certificates(props){
                     <div className="row">
                         {certificate.map((element)=>{
                             return <div className = "col-md-4 d-flex justify-content-center mt-3" key={element.id}>
-                                        <div className="my-3">
-                                            <div className="card" style={{width: "25rem", height: "36rem"}}>
+                                        <div className="my-3 mt-3">
+                                            <div className="card" style={{width: "23rem", height: "39rem"}}>
                                             <div>
                                                 <span className="badge rounded-pill bg-danger" style = {{disply:"flex", justifyContent:"flex-end", position:"absolute", right:"0"}}>{element.issuer}</span>
                                             </div>
                                             <img className="card-img-top" src={element.imgUrl} alt="Certificate Loading" style={{objectFit: "contain", height: "250px", marginTop: "15px"}} />
-                                                <div className="card-body">
+                                                <div className="card-body mt-3">
                                                     <h5 className="card-title" style={{fontWeight: "bold"}}>{element.title}</h5>
                                                     <p className="card-text">{element.description}</p>
                                                     <p className = "card-text"><small className = "text-muted">Issued On {element.issueDate}</small></p>

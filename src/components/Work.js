@@ -87,8 +87,8 @@ export default function Certificates(props){
                     <div className="row">
                         {work.map((element)=>{
                             return <div className = "col-md-4 d-flex justify-content-center mt-3" key={element.id}>
-                                        <div className="my-3">
-                                            <div className="card" style={{width: "25rem", height: "32rem"}}>
+                                        <div className="my-3 mt-3">
+                                            <div className="card" style={{width: "23rem", height: "35rem"}}>
                                             <div>
                                                 <span className="badge rounded-pill bg-danger" style = {{disply:"flex", justifyContent:"flex-end", position:"absolute", right:"0"}}>{element.company}</span>
                                             </div>
