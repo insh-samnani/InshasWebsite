@@ -4,6 +4,17 @@ import Footer from './Footer';
 
 const certificate = [
     {
+        id: '19',
+        title: 'Org Projector',
+        description: '"Org Projector" is an innovative web solution that transforms organization dynamics. This MERN-based platform streamlines registration, fosters cross-project collaboration, and enhances task management. It empowers efficient teamwork, inviting members, task assignment, and progress tracking, revolutionizing how organizations operate.',
+        course: 'Personal',
+        projectUrl: 'https://github.com/insh-samnani/OrgProjector',
+        dateDuration: '15th June, 2023 - 30th June, 2023',
+        technology: 'MERN Stack',
+        contributors: [{name: 'Ismail Ahmed Ansari', url: 'https://www.linkedin.com/in/ismail-ahmed-ansari-27378720b/'}],
+        contributorss: true
+    },
+    {
       id: '1',
       title: 'Advance Tour Guides - Web Application',
       description: 'ATG is a web-based GUI application providing tailored travel support within Pakistan to end users. Usually, the tour websites do not provide a good GUI, but ATG attracts user via its front-end and provides all in one easily understandable feature. It provides hassle-free and complete services in the domain of customized tours, hotels, flights, and transportation.',
